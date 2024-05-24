@@ -1,23 +1,77 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>About me Page</title>
-<style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me Page</title>
+    <style>
         body {
             background-color: lightblue;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        header {
+            text-align: center;
+            padding: 50px 0;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            color: #282c34;
+        }
+        section {
+            margin: 20px 0;
+        }
+        section h2 {
+            font-size: 2em;
+            margin-bottom: 10px;
+            color: #282c34;
+        }
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #282c34;
+            color: white;
+        }
+        a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
-    <h1>Hello, My name is Benjamin!</h1>
-    <section id= "Hobbies"> 
-      <h2>Hobbies</h2>
-      <p></p>
-  </section>
-  <section id= "Grade and age">
-11th grade junior and 16 years old
-  </section>
-    <p>.</p>
-    <a href="https://www.youtube.com/watch?v=XSbZidsgMfw">This is a link to youtube.com</a>
+    <div class="container">
+        <header>
+            <h1>Hello, My name is Benjamin!</h1>
+        </header>
+        <section id="Hobbies">
+            <h2>Hobbies</h2>
+            <p>Here you can mention your hobbies. For example, playing sports, reading books, coding, etc.</p>
+        </section>
+        <section id="Grade and age">
+            <h2>Grade and Age</h2>
+            <p>I am an 11th-grade junior and 16 years old.</p>
+        </section>
+        <section>
+            <h2>Favorite Video</h2>
+            <p><a href="https://www.youtube.com/watch?v=XSbZidsgMfw" target="_blank">This is a link to a YouTube video I like</a></p>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2024 Benjamin Jauregui</p>
+    </footer>
 </body>
 </html>
