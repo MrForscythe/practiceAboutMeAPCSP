@@ -6,7 +6,7 @@
     <title>All About Ally</title>
     <style>
         body {
-            background: url('hearts-background.jpg') repeat, url('https://via.placeholder.com/150') center center/cover fixed, url('https://via.placeholder.com/150') right top/cover no-repeat, url('https://via.placeholder.com/150') left bottom/cover no-repeat, pink;
+            background: url('hearts-background.jpg') repeat, pink;
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
@@ -14,23 +14,41 @@
         header {
             text-align: center;
             padding: 20px 0;
+            background-color: rgba(255, 192, 203, 0.8); /* Light pink */
+            border-bottom: 2px solid pink;
+        }
+        header h1 {
+            color: pink;
+            font-size: 36px;
+            margin-bottom: 5px;
         }
         section {
             margin: 20px;
             padding: 20px;
-            background-color: rgba(255, 255, 255, 0.8);
+            background-color: rgba(255, 250, 240, 0.9); /* Light goldenrod yellow */
             border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
         }
         h2 {
             color: pink;
+            font-size: 24px;
+            margin-bottom: 15px;
         }
         .fun-facts {
-            background-color: lightpink;
+            background-color: rgba(255, 240, 245, 0.9); /* Lavender blush */
         }
         footer {
             text-align: center;
             padding: 20px 0;
-            background-color: pink;
+            background-color: rgba(255, 192, 203, 0.8); /* Light pink */
+            border-top: 2px solid pink;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Soft shadow for images */
+            margin-bottom: 10px;
         }
     </style>
 </head>
@@ -42,6 +60,7 @@
 
     <section>
         <h2>Fun Facts</h2>
+        <img src="musical-instruments.jpg" alt="Musical Instruments" width="200">
         <p>A fun fact about me is that I can play four instruments and have four cats.</p>
     </section>
 
