@@ -6,77 +6,74 @@
     <title>All About Ally</title>
     <style>
         body {
-            background: url('hearts-background.jpg') repeat, pink;
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
+            background-color: #ffe6f2; /* light pink */
         }
         header {
+            background-color: #ff66b3; /* pink */
+            color: white;
             text-align: center;
-            padding: 20px 0;
-            background-color: rgba(255, 192, 203, 0.8); /* Light pink */
-            border-bottom: 2px solid pink;
+            padding: 50px 0;
         }
-        header h1 {
-            color: pink;
-            font-size: 36px;
-            margin-bottom: 5px;
+        nav {
+            text-align: center;
+            background-color: #ffb3d9; /* light pink */
+            padding: 10px 0;
+        }
+        nav a {
+            text-decoration: none;
+            color: #ff66b3; /* pink */
+            margin: 0 20px;
+        }
+        nav a:hover {
+            text-decoration: underline;
         }
         section {
-            margin: 20px;
-            padding: 20px;
-            background-color: rgba(255, 250, 240, 0.9); /* Light goldenrod yellow */
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
-        }
-        h2 {
-            color: pink;
-            font-size: 24px;
-            margin-bottom: 15px;
-        }
-        .fun-facts {
-            background-color: rgba(255, 240, 245, 0.9); /* Lavender blush */
+            padding: 50px;
+            text-align: center;
         }
         footer {
+            background-color: #ff66b3; /* pink */
+            color: white;
             text-align: center;
             padding: 20px 0;
-            background-color: rgba(255, 192, 203, 0.8); /* Light pink */
-            border-top: 2px solid pink;
-        }
-        img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 5px;
-            box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Soft shadow for images */
-            margin-bottom: 10px;
+            position: absolute;
+            width: 100%;
+            bottom: 0;
         }
     </style>
 </head>
 <body>
     <header>
         <h1>All About Ally</h1>
-        <img src="heart.png" alt="Hearts" width="100">
     </header>
-
-    <section>
-        <h2>Fun Facts</h2>
-        <img src="musical-instruments.jpg" alt="Musical Instruments" width="200">
-        <p>A fun fact about me is that I can play four instruments and have four cats.</p>
+    <nav>
+        <a href="#about">About Ally</a>
+        <a href="#fun-facts">Fun Facts</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <section id="about">
+        <h2>About Ally</h2>
+        <p>Ally, born on 06/06/06 in Chicago, embodies the spirit of the Windy City. With dreams as vast as the skyline, Ally's journey is just beginning.</p>
+        <p><strong>Future Goal:</strong> Pursue my global marketing career and travel the world.</p>
+        <p><strong>Dream:</strong> To buy a loft with a white cat.</p>
+        <p><strong>Strengths:</strong> Social, kind, likes to help.</p>
     </section>
-
-    <section>
-        <h2>About Me</h2>
-        <p><strong>Name:</strong> Ally</p>
-        <p><strong>Birthday:</strong> June 6, 2006</p>
-        <p><strong>From:</strong> Chicago</p>
-        <p><strong>Hobbies:</strong> Listening to music, working out, spending time with my cats</p>
-        <p><strong>Future Goal:</strong> Pursue my global marketing career and travel the world</p>
-        <p><strong>Dream:</strong> To buy a loft with a white cat</p>
-        <p><strong>Strengths:</strong> Social, kind, likes to help</p>
+    <section id="fun-facts">
+        <h2>3 Fun Facts</h2>
+        <p>1. Ally loves cats: Whether it's adopting strays or scrolling through cute cat videos, Ally's feline fascination knows no bounds.</p>
+        <p>2. Ally loves working out: From morning jogs to intense gym sessions, Ally finds solace and strength in the rhythm of exercise.</p>
+        <p>3. Ally loves traveling: Passport in hand, Ally explores the world, collecting memories and experiences like treasured souvenirs.</p>
     </section>
-
+    <section id="contact">
+        <h2>Contact</h2>
+        <!-- Add contact form or email address here -->
+    </section>
     <footer>
-        &copy; 2024 All About Ally
+        <p>Follow Ally on social media:</p>
+        <!-- Add social media icons here -->
     </footer>
 </body>
 </html>
