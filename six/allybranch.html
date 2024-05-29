@@ -5,43 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>All About Ally</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #ffe6f2; /* light pink */
+        /* Styles from previous code... */
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-gap: 20px;
+            padding: 20px;
         }
-        header {
-            background-color: #ff66b3; /* pink */
-            color: white;
-            text-align: center;
-            padding: 50px 0;
-        }
-        nav {
-            text-align: center;
-            background-color: #ffb3d9; /* light pink */
-            padding: 10px 0;
-        }
-        nav a {
-            text-decoration: none;
-            color: #ff66b3; /* pink */
-            margin: 0 20px;
-        }
-        nav a:hover {
-            text-decoration: underline;
-        }
-        section {
-            padding: 50px;
-            text-align: center;
-        }
-        footer {
-            background-color: #ff66b3; /* pink */
-            color: white;
-            text-align: center;
-            padding: 20px 0;
-            position: absolute;
+
+        .gallery img {
             width: 100%;
-            bottom: 0;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
     </style>
 </head>
@@ -52,28 +28,55 @@
     <nav>
         <a href="#about">About Ally</a>
         <a href="#fun-facts">Fun Facts</a>
+        <a href="gallery.html">Gallery</a>
         <a href="#contact">Contact</a>
     </nav>
     <section id="about">
         <h2>About Ally</h2>
-        <p>Ally, born on 06/06/06 in Chicago, embodies the spirit of the Windy City. With dreams as vast as the skyline, Ally's journey is just beginning.</p>
-        <p><strong>Future Goal:</strong> Pursue my global marketing career and travel the world.</p>
-        <p><strong>Dream:</strong> To buy a loft with a white cat.</p>
-        <p><strong>Strengths:</strong> Social, kind, likes to help.</p>
+        <!-- About Ally content... -->
     </section>
     <section id="fun-facts">
         <h2>3 Fun Facts</h2>
-        <p>1. Ally loves cats: Whether it's adopting strays or scrolling through cute cat videos, Ally's feline fascination knows no bounds.</p>
-        <p>2. Ally loves working out: From morning jogs to intense gym sessions, Ally finds solace and strength in the rhythm of exercise.</p>
-        <p>3. Ally loves traveling: Passport in hand, Ally explores the world, collecting memories and experiences like treasured souvenirs.</p>
+        <!-- Fun Facts content... -->
     </section>
     <section id="contact">
         <h2>Contact</h2>
-        <!-- Add contact form or email address here -->
+        <!-- Contact form or email address... -->
     </section>
     <footer>
-        <p>Follow Ally on social media:</p>
-        <!-- Add social media icons here -->
+        <!-- Footer content... -->
     </footer>
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All About Ally - Gallery</title>
+    <style>
+        /* Styles from previous code... */
+    </style>
+</head>
+<body>
+    <header>
+        <h1>All About Ally</h1>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="#about">About Ally</a>
+        <a href="#fun-facts">Fun Facts</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <div class="gallery">
+        <img src="image1.jpg" alt="Image 1">
+        <img src="image2.jpg" alt="Image 2">
+        <img src="image3.jpg" alt="Image 3">
+        <!-- Add more images as needed -->
+    </div>
+    <footer>
+        <!-- Footer content... -->
+    </footer>
+</body>
+</html>
+
