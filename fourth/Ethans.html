@@ -1,1 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample HTML Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background-color: #007BFF;
+            color: white;
+            text-align: center;
+            padding: 1em;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin: 20px;
+        }
+        .info, .image {
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            padding: 10px;
+            margin: 10px;
+            flex: 1 1 calc(45% - 40px);
+            box-sizing: border-box;
+        }
+        .info h2 {
+            margin-top: 0;
+        }
+        .image img {
+            max-width: 100%;
+            border-radius: 4px;
+        }
+        .footer {
+            background-color: #007BFF;
+            color: white;
+            text-align: center;
+            padding: 1em;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>Ethans project</h1>
+    </div>
+
+    <div class="container">
+        <div class="info">
+            <h2>About Me</h2>
+            <p>My name is Ethan. I'm 18 years old and from Chicago. I am graduating 12th grade and will be attending the University of Illinois at Urbana-Champaign to study Finance.</p>
+        </div>
+        <div class="image">
+            <h2>My Girlfriend</h2>
+            <img src="https://cdn.glitch.me/89bcc9ac-03e2-4e5d-ba68-50e8cf4bfd8d/8b779e6a-6288-4862-bdef-ba18ca5cc0dd.image.png?v=1717008044016" alt="Team Image">
+        </div>
+        <div class="info">
+            <h2>My Hobbies</h2>
+            <p>I'm into golf and other sports. My favorite color is blue. I'm good at making things and love problem solving. I also like cars a lot, especially those from Japan and Germany.</p>
+        </div>
+        <div class="image">
+            <h2>Fav Car</h2>
+            <img src="https://cdn.glitch.global/89bcc9ac-03e2-4e5d-ba68-50e8cf4bfd8d/iris.webp?v=1717008463262" alt="Office Image">
+        </div>
+    </div>
+
+    
+
+</body>
+</html>
 
