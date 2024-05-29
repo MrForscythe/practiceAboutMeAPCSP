@@ -1,20 +1,11 @@
-<!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- 
-      This is an HTML comment
-      You can write text in a comment and the content won't be visible in the page
-    -->
-
+    
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" href="https://glitch.com/favicon.ico" />
 
-    <!--
-      This is the page head - it contains info the browser uses
-      Like the title, which appears on the browser tab but not inside the page
-      Further down you'll see the content that displays in the page
-    -->
+    
     <title>Hello, my name is Yahina :)</title>
 
     <!-- The website stylesheet -->
@@ -24,54 +15,61 @@
     <script src="/script.js" defer></script>
   </head>
   <body>
-    <!--
-      The body includes the content you see in the page
-      Each element is defined using tags, like this <div></div>
-      The attributes like class="wrapper" let us style elements in the CSS
-    -->
+   
     <div class="wrapper">
       <div class="content" role="main">
-        <h1 class="title">Hello!</h1>
+        <h1 class="title">Hello, my name is Yahina Hernandez</h1>
         <img
-          src="https://cdn.glitch.com/a9975ea6-8949-4bab-addb-8a95021dc2da%2Fillustration.svg?v=1618177344016"
+          src= "https://cdn.glitch.global/59adea59-f9d1-4a3f-9714-d863f8628f1a/Screenshot%202024-05-29%208.23.45%20AM.png?v=1716989083600"
           class="illustration"
-          alt="Editor illustration"
-          title="Click the image!"
+          title="me"
         />
         <div class="instructions">
-          <h2>Using this project</h2>
+          <h2>About me</h2>
           <p>
-            My name is <strong>Yahina Hernandez</strong>. I am apart of P4 of AP Computer Science. 
+            I am <strong>18, from chicago </strong> and am a <strong>senior</strong>. <strong> 3 of my hobbies </strong> include drawing, roller skating and swimming.
+            My future <strong>goals</strong> are to: 
+            <li> Graduate college </li>
+            <li> Get a job I dont entirley hate </li>
+            <li> Travel more </li>
+            
+            <p>
+              
+          </p>Some <strong> strengths </strong> that I have are that I am creative, flexible and honest.
+          A <strong> fun fact </strong> about me is that despite the photo, I have a lot of piercings and plan to get a  lot more. 
           </p>
-          <!--  🚧 TODO: ADD BUTTON HERE -->
-
-          <!-- Once you've added the button from TODO.md, click it in the page -->
-          <!-- Check out the function in script.js to see how it works -->
-        </div>
-      </div>
-    </div>
-    <!-- The footer holds our remix button — you can keep or delete it ✂ -->
-    <footer class="footer">
-      <div class="links"></div>
-      <a
-        class="btn--remix"
-        target="_top"
-        href="https://glitch.com/edit/#!/remix/glitch-hello-website"
-      >
+          
+        <p> <strong> My favorite dish</strong>: Kaho Soy and <strong>one of my pets:</strong> Misa
+        
         <img
-          src="https://cdn.glitch.com/605e2a51-d45f-4d87-a285-9410ad350515%2FLogo_Color.svg?v=1618199565140"
-          alt=""
-        />
-        Remix on Glitch
-      </a>
-    </footer>
-  </body>
-</html>
+          src="https://cdn.glitch.global/59adea59-f9d1-4a3f-9714-d863f8628f1a/Screenshot%202024-05-29%208.30.55%20AM.png?v=1716989496173"
+          class="illustration"
+          title="food"
+        </p>
+        <img
+          src="https://cdn.glitch.global/59adea59-f9d1-4a3f-9714-d863f8628f1a/Screenshot%202024-05-29%208.36.38%20AM.png?v=1716989842992"
+          class="illustration"
+          title="cat"
+
+             
+    <html>
+ 
+  <head>
+    <div class = "navbar">
+      <a href="index.html">Home</a>
+      <a href="Period4.html">Period 4</a>
+      <a href="Period6.html">Period 6</a>
+    </div>
+  </head>
+  <body>
+          
+        </body>
+      </html>
 
 :root {
   --color-bg: #710000;
-  --color-text-main: #FFFFFF;
-  --color-primary: #FFFF00;
+  --color-text-main: #ffffff;
+  --color-primary: #000000;
   --wrapper-height: 87vh;
   --image-max-width: 300px;
   --image-margin: 3rem;
@@ -102,7 +100,7 @@
 
 /* Our remix on glitch button */
 .btn--remix {
-  font-family: HK Grotesk;
+  font-family: "HK Grotesk";
   padding: 0.75rem 1rem;
   font-size: 1.1rem;
   line-height: 1rem;
@@ -110,12 +108,12 @@
   height: 2.75rem;
   align-items: center;
   cursor: pointer;
-  background: #FFFFFF;
+  background: #ffffff;
   border: 1px solid #000000;
   box-sizing: border-box;
   border-radius: 4px;
   text-decoration: none;
-  color: #000;
+  color: #ffffff;
   white-space: nowrap;
   margin-left: auto;
 }
@@ -123,7 +121,7 @@
   margin-right: 0.5rem;
 }
 .btn--remix:hover {
-  background-color: #D0FFF1;
+  background-color: #d0fff1;
 }
 
 /* Navigation grid */
@@ -134,7 +132,7 @@
   padding: 1rem 0 0.75rem 0;
   width: 100%;
   flex-wrap: wrap;
-  border-top: 4px solid #fff;
+  border-top: 4px solid #ffffff;
 }
 
 .footer a:not(.btn--remix):link,
@@ -143,7 +141,7 @@ a:not(.btn--remix):visited {
   font-style: normal;
   font-weight: normal;
   font-size: 1.1rem;
-  color: #000;
+  color: #ffffff;
   text-decoration: none;
   border-style: none;
 }
@@ -184,13 +182,14 @@ body {
 
 /* Very light scaling for our illustration */
 .title {
-  color: #FFFFFF;
+  color: #ffffff;
   font-family: HK Grotesk;
   font-style: normal;
   font-weight: bold;
-  font-size: 100px;
+  font-size: 40px;
   line-height: 105%;
   margin: 0;
+  transform: translateX(40px);
 }
 
 /* Very light scaling for our illustration */
@@ -210,7 +209,7 @@ button,
 input {
   font-family: inherit;
   font-size: 100%;
-  background: #FFFFFF;
+  background: #ffffff;
   border: 1px solid #000000;
   box-sizing: border-box;
   border-radius: 4px;
@@ -220,7 +219,7 @@ input {
 
 /* Subheading */
 h2 {
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 /* Interactive image */
@@ -238,11 +237,11 @@ h2 {
 
 /* Links that open files in the editor */
 .fileopener {
-  cursor:pointer;
-  font-weight:bold;
-  border-bottom:3px solid var(--color-primary);
+  cursor: pointer;
+  font-weight: bold;
+  border-bottom: 3px solid var(--color-secondary);
   color: var(--color-secondary);
 }
 .fileopener:hover {
-  border-bottom:3px solid var(--color-secondary);
+  border-bottom: 3px solid var(--color-secondary);
 }
