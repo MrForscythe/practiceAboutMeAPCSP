@@ -3,75 +3,105 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me Page</title>
+    <title>Benjamin Jauregui's MySpace</title>
     <style>
         body {
-            background-color: lightblue;
+            background-color: black;
+            color: white;
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            color: #333;
         }
         .container {
-            max-width: 800px;
+            width: 80%;
             margin: 0 auto;
             padding: 20px;
-            background-color: white;
+            background-color: #333;
+            border: 2px solid #444;
             border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
         }
         header {
             text-align: center;
-            padding: 50px 0;
+            padding: 20px 0;
+            background-color: #222;
+            border-bottom: 2px solid #444;
         }
         header h1 {
             margin: 0;
-            font-size: 2.5em;
-            color: #282c34;
+            font-size: 3em;
+            color: #ff1493;
         }
         section {
             margin: 20px 0;
+            padding: 10px;
+            background-color: #444;
+            border-radius: 5px;
         }
         section h2 {
             font-size: 2em;
-            margin-bottom: 10px;
-            color: #282c34;
+            color: #ff1493;
+            border-bottom: 2px solid #ff1493;
+            padding-bottom: 5px;
         }
         footer {
             text-align: center;
-            padding: 20px 0;
-            background-color: #282c34;
-            color: white;
+            padding: 10px 0;
+            background-color: #222;
+            border-top: 2px solid #444;
+            color: #ff1493;
         }
         a {
-            color: #0066cc;
+            color: #00ffff;
             text-decoration: none;
         }
         a:hover {
             text-decoration: underline;
+        }
+        .image-gallery img {
+            width: 30%;
+            margin: 1%;
+            border: 2px solid #ff1493;
+            border-radius: 10px;
+        }
+        .links {
+            margin: 20px 0;
+        }
+        .links a {
+            display: block;
+            margin: 10px 0;
         }
     </style>
 </head>
 <body>
     <div class="container">
         <header>
-            <h1>Hello, My name is Benjamin!</h1>
+            <h1>Benjamin Jauregui's MySpace</h1>
         </header>
-        <section id="Hobbies">
-            <h2>Hobbies</h2>
-            <p>Here you can mention your hobbies. For example, playing sports, reading books, coding, etc.</p>
+        <section id="about-me">
+            <h2>About Me</h2>
+            <p>Hello! My name is Benjamin Jauregui. Welcome to my retro 2000s-style MySpace page! Here you'll find a little bit about me, some of my favorite images, and a few links I like to visit. Enjoy your stay!</p>
         </section>
-        <section id="Grade and age">
-            <h2>Grade and Age</h2>
-            <p>I am an 11th-grade junior and 16 years old.</p>
+        <section id="images">
+            <h2>My Favorite Images</h2>
+            <div class="image-gallery">
+                <img src="https://via.placeholder.com/150" alt="Placeholder Image 1">
+                <img src="https://via.placeholder.com/150" alt="Placeholder Image 2">
+                <img src="https://via.placeholder.com/150" alt="Placeholder Image 3">
+            </div>
         </section>
-        <section>
-            <h2>Favorite Video</h2>
-            <p><a href="https://www.youtube.com/watch?v=XSbZidsgMfw" target="_blank">This is a link to a YouTube video I like</a></p>
+        <section id="links">
+            <h2>Cool Links</h2>
+            <div class="links">
+                <a href="https://www.example.com" target="_blank">Example Website 1</a>
+                <a href="https://www.example.com" target="_blank">Example Website 2</a>
+                <a href="https://www.example.com" target="_blank">Example Website 3</a>
+            </div>
         </section>
     </div>
     <footer>
-        <p>&copy; 2024 Benjamin Jauregui</p>
+        <p>&copy; 2024 <a href="https://www.yourwebsite.com" target="_blank">Benjamin Jauregui</a></p>
     </footer>
 </body>
 </html>
+
