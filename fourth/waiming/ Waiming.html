@@ -1,22 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Me</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #004d00, #00b300);
+            color: #fff;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 20px 0;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 3em;
+        }
+        .content {
+            margin: 20px auto;
+            width: 80%;
+            max-width: 600px;
+            background: rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .content h2 {
+            margin-top: 0;
+        }
+        .content p {
+            font-size: 1.2em;
+            line-height: 1.5em;
+        }
+        img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            margin-top: 20px;
+            border: 5px solid #fff;
+        }
+        footer {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        footer p {
+            margin: 0;
+        }
+        button {
+            background-color: #00b300;
+            border: none;
+            color: #fff;
+            padding: 10px 20px;
+            font-size: 1em;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+        button:hover {
+            background-color: #004d00;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
 </head>
 <body>
     <header>
         <h1>About Me</h1>
     </header>
-                <img src="https://cdn.glitch.global/5a84b7f2-ce2b-4312-bfba-33c0aca0f962/KimKim?v=1716401640341" alt="Photo">
-            <div class="content">
-                <h2>Waiming Huang</h2>
-                <p>I am Waiming, I like math and stuff. I have a Cat. I live with my parent. we all live in a house. our house is next to our neighbor's house. </p>
-                <p>The picture above is me</p>
-                <h3>Contact</h3>
-                <p>pls dont</p>
-            </div>
+    <img src="https://cdn.glitch.global/5a84b7f2-ce2b-4312-bfba-33c0aca0f962/KimKim?v=1716401640341" alt="Photo" id="profile-pic">
+    <div class="content">
+        <h2>Waiming Huang</h2>
+        <p>I am Waiming, I like math and stuff. I have a Cat. I live with my parent. we all live in a house. our house is next to our neighbor's house.</p>
+        <p>The picture above is me</p>
+        <h3>Contact</h3>
+        <p id="contact-info" class="hidden">Email: waiming@example.com</p>
+        <button onclick="toggleContact()">Show Contact Info</button>
+    </div>
     <footer>
         <p>am broke, need money</p>
     </footer>
+    <script>
+        function toggleContact() {
+            var contactInfo = document.getElementById('contact-info');
+            if (contactInfo.classList.contains('hidden')) {
+                contactInfo.classList.remove('hidden');
+            } else {
+                contactInfo.classList.add('hidden');
+            }
+        }
+    </script>
 </body>
 </html>
