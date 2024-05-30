@@ -7,11 +7,18 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background: linear-gradient(to right, #004d00, #00b300);
+            background: linear-gradient(270deg, #004d00, #00b300);
+            background-size: 400% 400%;
+            animation: gradientAnimation 15s ease infinite;
             color: #fff;
             text-align: center;
             margin: 0;
             padding: 0;
+        }
+        @keyframes gradientAnimation {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
         }
         header {
             background-color: rgba(0, 0, 0, 0.7);
