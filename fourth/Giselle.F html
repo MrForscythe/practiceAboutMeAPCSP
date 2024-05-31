@@ -1,5 +1,3 @@
-
-Copy code
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,51 +11,44 @@ Copy code
             padding: 0;
             background-color: #f0f0f0;
         }
-        header {
-            background-color: #333;
-            color: #fff;
-            padding: 20px;
-            text-align: center;
-        }
         .container {
             max-width: 800px;
             margin: 20px auto;
             padding: 20px;
             background-color: #fff;
-            border-radius: 5px;
+            border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
         h1 {
             color: #333;
-            text-align: center;
         }
         p {
+            color: #666;
             line-height: 1.6;
-        }
-        footer {
-            background-color: #333;
-            color: #fff;
-            padding: 10px 0;
-            text-align: center;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Giselle Flores</h1>
-    </header>
     <div class="container">
-        <h2>About Me</h2>
-        <p>Hello! My name is Giselle Flores. I'm passionate about many things, including web development, design, and photography.</p>
-        <h2>Portfolio</h2>
-        <p>Here are some examples of my work:</p>
-        <!-- You can add images or links to Giselle's portfolio here -->
-    </div>
-    <footer>
-        &copy; 2024 Giselle Flores
-    </footer>
+        <h1>About Giselle Flores</h1>
+        <p>Hi, I'm Giselle Flores, an 11th-grade student at Noble High School. I'm soon to be a senior and I'm the middle child of 5 siblings. I have a lovely pug named Otis, and I'm passionate about playing tennis and basketball.</p>
+        <h2>Interests</h2>
+        <ul>
+            <li>Tennis</li>
+            <li>Basketball</li>
+            <li>I like watching horror movies</li>
+          <li>I want to be a vet when I grow up</li>
+          <li>I love dogs, I love animals</li>
+        </ul>
+        <h2>Meet Otis</h2>
+        <p>This is Otis, my chunky pug I got him when I was 15.</p>
+        <img 
+             src= "https://cdn.glitch.global/344b3a49-9514-4faa-95eb-3ef476599602/IMG_1265.jpg?v=1717092160970"
+           width="400" 
+          height="500" />
+      
+     </div>
 </body>
 </html>
+         
+           
