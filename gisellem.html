@@ -9,7 +9,10 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" href="https://glitch.com/favicon.ico" />
-
+   
+<div style="background-color:Pink">
+  <h1 style="color:white">Giselle Meza</h1>
+</div>
     <!--
       This is the page head - it contains info the browser uses
       Like the title, which appears on the browser tab but not inside the page
@@ -24,32 +27,52 @@
     <script src="/script.js" defer></script>
   </head>
   <body>
-    <!--
-      The body includes the content you see in the page
-      Each element is defined using tags, like this <div></div>
-      The attributes like class="wrapper" let us style elements in the CSS
-    -->
+   <style>
+    body {
+      background-color: pink;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    h1 {
+      color: white;
+    }
+  </style>
+
     <div class="wrapper">
       <div class="content" role="main">
-        <h1 class="title">Hello World!</h1>
-        <img
-          src="https://cdn.glitch.com/a9975ea6-8949-4bab-addb-8a95021dc2da%2Fillustration.svg?v=1618177344016"
+        <h1 class="title">Hello Class!</h1>
+        
+        <img 
+             src = "https://cdn.glitch.global/69364885-0642-4fbe-b7a4-c1e9c8294e10/unnamed.jpg?v=1717092689092"
+             width="200"
+             heigh="500"
+             />
+        
+        
+        <div class="instructions">
+          <h2>All about me! </h2>
+          <p>
+            Giselle Meza :) <strong>Hello  Class </strong>  I will share a couple things about me!
+      
+          </p>
+          <ul>
+            <il> - I love strawberries</il>
+            <il> - My favorite book Crank by Ellen Hopkins</il>
+            <il>My favorite color is pink [obvi]</il> 
+          </ul>
+          <img
+          
+          src = " https://cdn.glitch.global/69364885-0642-4fbe-b7a4-c1e9c8294e10/ALR-strawberry-fruit-or-vegetable-f6dd901427714e46af2d706a57b9016f%20(1).jpg?v=1717090790858"
           class="illustration"
           alt="Editor illustration"
           title="Click the image!"
         />
-        <div class="instructions">
-          <h2>Using this project</h2>
-          <p>
-            This is the Glitch <strong>Hello Website</strong> project. You can
-            use it to build your own site. Check out the code in the editor and open
-            the <span class="fileopener" data-file="TODO.md" data-line="0"
-              >TODO</span> for next steps!
-          </p>
-          <!--  🚧 TODO: ADD BUTTON HERE -->
-
-          <!-- Once you've added the button from TODO.md, click it in the page -->
-          <!-- Check out the function in script.js to see how it works -->
+          
         </div>
       </div>
     </div>
@@ -70,4 +93,3 @@
     </footer>
   </body>
 </html>
-
