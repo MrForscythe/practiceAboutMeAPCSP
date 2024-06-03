@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Henrey Bustos - Personal Website</title>
-    <link href="https://fonts.googleapis.com/css2?family=Gloock&family=UnifrakturCook:display=swap&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=UnifrakturCook:display=swap&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: 'Roboto', sans-serif;
+            font-family: 'Playfair Display', serif;
             margin: 0;
             padding: 0;
-            background: url('https://images.unsplash.com/photo-1571689944173-d51d18b3dcb4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDd8fHdvcmdlcnxlbnwwfHx8fDE2MTkwMjQ2ODk&ixlib=rb-1.2.1&q=80&w=1080') no-repeat center center fixed;
+            background: url('https://wallpapercave.com/wp/wp4850127.jpg') no-repeat center center fixed;
             background-size: cover;
             color: #e1e1e1;
             display: flex;
@@ -19,17 +19,15 @@
             backdrop-filter: brightness(0.5);
         }
         header {
-            background: #2c2c2c;
+            background: rgba(0, 0, 0, 0.8);
             color: #ff4c4c;
             padding: 1em 0;
             text-align: center;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
-            position: relative;
-            z-index: 10;
             border-bottom: 3px solid #8B0000;
         }
         header h1 {
-            font-family: 'Gloock', serif;
+            font-family: 'UnifrakturCook', serif;
             margin: 0;
             font-size: 3em;
             letter-spacing: 2px;
@@ -43,10 +41,10 @@
         main {
             padding: 2em;
             flex: 1;
-            z-index: 5;
             position: relative;
-            backdrop-filter: blur(5px) brightness(0.7);
             background: rgba(0, 0, 0, 0.7);
+            border: 1px solid #333;
+            box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.8);
         }
         .section {
             background: rgba(30, 0, 0, 0.9);
@@ -58,7 +56,7 @@
             border: 2px solid #8B0000;
         }
         .section:hover {
-            transform: translateY(-10px) rotate(-1deg);
+            transform: translateY(-10px);
             box-shadow: 0 6px 20px rgba(0, 0, 0, 1);
             background: rgba(100, 0, 0, 0.9);
         }
@@ -78,7 +76,7 @@
             filter: grayscale(100%);
         }
         img:hover {
-            transform: scale(1.1) rotate(1deg);
+            transform: scale(1.05);
             filter: grayscale(0%);
         }
         .navbar {
@@ -99,7 +97,7 @@
         }
         .navbar a:hover {
             background: linear-gradient(135deg, #ff4c4c, #8B0000);
-            transform: scale(1.1) rotate(-2deg);
+            transform: scale(1.1);
         }
         a {
             color: #ff4c4c;
@@ -110,6 +108,22 @@
         a:hover {
             color: #ffffff;
             border-bottom: 2px solid #ffffff;
+        }
+        .section ul {
+            list-style: none;
+            padding: 0;
+        }
+        .section ul li {
+            margin: 0.5em 0;
+            padding-left: 1.5em;
+            position: relative;
+        }
+        .section ul li::before {
+            content: '⚔';
+            position: absolute;
+            left: 0;
+            color: #ff4c4c;
+            font-size: 1.2em;
         }
     </style>
 </head>
@@ -126,12 +140,11 @@
         <div class="section">
             <h2>Hobbies & Interests</h2>
             <ul>
-                <img src="https://miro.medium.com/v2/resize:fit:1024/1*wT0V-u3mYXY1yv7Cr361vA.png" alt="Cars">
                 <li>I love to work on cars.</li>
-                <a href="https://youtu.be/VB6E11PGKCY?si=SCiWRHyFxAieOWAo">Nissan Z Body kit, one of my favorites!</a>
+                <li><a href="https://youtu.be/VB6E11PGKCY?si=SCiWRHyFxAieOWAo">Nissan Z Body kit, one of my favorites!</a></li>
                 <li>I love to workout.</li>
                 <li>I love to read books.</li>
-                <a href="https://youtu.be/d5Ti2qWDwuQ?si=7PQnKCFrSgf7gzjg">One of my favorite mangas, it's a must-read!</a>
+                <li><a href="https://youtu.be/d5Ti2qWDwuQ?si=7PQnKCFrSgf7gzjg">One of my favorite mangas, it's a must-read!</a></li>
             </ul>
         </div>
         <div class="section">
