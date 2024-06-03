@@ -1,65 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>Period 6 Class - AP Computer Science Principles</title>
     <style>
         body {
-            background-color: #f0f0f0;
-            color: #333;
-            font-family: 'Roboto', sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('https://github.com/MrForscythe/practiceAboutMeAPCSP/blob/Meet-the-Foresythe/Chord%20Striker.jpeg?raw=true') no-repeat center center fixed;
+            background-size: cover;
+            color: #1d1d1f;
+            overflow-x: hidden;
         }
 
-        a {
-            color: #007BFF;
+        .navbar {
+            display: flex;
+            justify-content: center;
+            background-color: #1d1d1f;
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            transition: background-color 0.3s;
+        }
+
+        .navbar a {
+            color: white;
+            text-transform: uppercase;
             text-decoration: none;
-            margin: 0 10px;
-            transition: color 0.3s ease;
+            padding: 0 1rem;
+            font-weight: 500;
+            transition: color 0.3s;
         }
 
-        a:hover {
-            color: #0056b3;
+        .navbar a:hover {
+            color: #0071e3;
         }
 
-        .return-button {
-            display: inline-block;
-            color: #FFF;
-            background-color: #007BFF;
-            padding: 10px 20px;
-            border-radius: 5px;
-            text-decoration: none;
-            transition: background-color 0.3s ease;
+        .content {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 2rem;
+            background: url('https://github.com/MrForscythe/practiceAboutMeAPCSP/blob/Meet-the-Foresythe/Chord%20Striker.jpeg?raw=true') no-repeat center center fixed;
+            background-size: cover;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
         }
 
-        .return-button:hover {
-            background-color: #0056b3;
+        .content h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+
+        .student-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+
+        .student {
+            background-color: #A9A9A9;
+            color: white;
+            padding: 1rem;
+            border-radius: 8px;
+            text-align: center;
+            font-size: 1.25rem;
+        }
+
+        .student a {
+            color: white;
+        }
+
+        .student a:hover {
+            color: white;
+        }
+
+        .student a:visited {
+            color: white;
         }
 
         footer {
-            background-color: #333;
-            color: #fff;
             text-align: center;
-            padding: 10px 0;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
+            padding: 1rem 0;
+            background-color: #1d1d1f;
+            color: white;
+            margin-top: 2rem;
+        }
+
+        @media (max-width: 768px) {
+            .content {
+                margin: 1rem;
+                padding: 1.5rem;
+            }
         }
     </style>
 </head>
-
 <body>
-    <header>
-        <nav>
-            <a href="index.html" class="return-button">Return</a>
-        </nav>
-    </header>
-
-    <main>
-        <div class="content">
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="four.html">Period 4</a>
+        <a href="six.html">Period 6</a>
+    </div>
+    
+<main>
+    <div class="content">
+        <h1>Period 6 Class</h1>
+        <div class="student-grid">
+            <div class="content">
             <h1>Period 6 Class</h1>
             <div class="student-grid">
                 <div class="student">Christopher Arciniega</div>
@@ -88,7 +139,7 @@
     </main>
 
     <footer>
-        © 2024 AP Computer Science Principles - Noble Street College Prep
+        © 2024 AP Computer Science Principles - Noble Street College Prep Golden Tigers 
     </footer>
 </body>
 </html>
