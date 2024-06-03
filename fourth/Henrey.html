@@ -10,58 +10,61 @@
             font-family: 'Roboto', sans-serif;
             margin: 0;
             padding: 0;
-            background: linear-gradient(135deg, #000000, #1a1a1a);
+            background: url('https://wallpapercave.com/wp/wp4850127.jpg') no-repeat center center fixed;
+            background-size: cover;
             color: #ffffff;
             display: flex;
             flex-direction: column;
             min-height: 100vh;
-            background: url('https://images.unsplash.com/photo-1511367461989-f85a21fda167?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80') no-repeat center center fixed;
-            background-size: cover;
+            backdrop-filter: brightness(0.5);
         }
         header {
-            background: linear-gradient(135deg, #8B0000, #DC143C);
-            color: white;
+            background: #2c2c2c;
+            color: #DC143C;
             padding: 1em 0;
             text-align: center;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
             position: relative;
             z-index: 10;
+            border-bottom: 3px solid #8B0000;
         }
         header h1 {
             font-family: 'Creepster', cursive;
             margin: 0;
             font-size: 3em;
+            letter-spacing: 2px;
         }
         header p {
             margin: 0.5em 0 0;
             font-size: 1.2em;
             font-style: italic;
+            color: #cccccc;
         }
         main {
             padding: 2em;
             flex: 1;
             z-index: 5;
             position: relative;
-            backdrop-filter: blur(5px);
-            background: rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(5px) brightness(0.7);
+            background: rgba(0, 0, 0, 0.7);
         }
         .section {
             background: rgba(51, 0, 0, 0.9);
             margin-bottom: 1.5em;
             padding: 1.5em;
-            border-radius: 15px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.7);
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.9);
             transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
             border: 2px solid #8B0000;
         }
         .section:hover {
             transform: translateY(-10px) rotate(-1deg);
-            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.9);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 1);
             background: rgba(153, 0, 0, 0.9);
         }
         .section h2 {
             margin-top: 0;
-            font-family: 'Orbitron', sans-serif;
+            font-family: 'Creepster', cursive;
             font-size: 1.8em;
             color: #DC143C;
         }
@@ -69,12 +72,14 @@
             display: block;
             margin: 10px 0;
             max-width: 100%;
-            border-radius: 15px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-            transition: transform 0.3s ease;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+            transition: transform 0.3s ease, filter 0.3s ease;
+            filter: grayscale(80%);
         }
         img:hover {
             transform: scale(1.1) rotate(1deg);
+            filter: grayscale(0%);
         }
         .navbar {
             margin-top: 10px;
@@ -112,10 +117,10 @@
             <ul>
                 <img src="https://miro.medium.com/v2/resize:fit:1024/1*wT0V-u3mYXY1yv7Cr361vA.png" alt="Cars">
                 <li>I love to work on cars.</li>
-                <a href = "https://youtu.be/VB6E11PGKCY?si=SCiWRHyFxAieOWAo"> Nissan Z Body kit, one of my favorites !</a>
+                <a href="https://youtu.be/VB6E11PGKCY?si=SCiWRHyFxAieOWAo">Nissan Z Body kit, one of my favorites!</a>
                 <li>I love to workout.</li>
                 <li>I love to read books.</li>
-                <a href = "https://youtu.be/d5Ti2qWDwuQ?si=7PQnKCFrSgf7gzjg"> One of my favorite manga's, it's a must read !</a>
+                <a href="https://youtu.be/d5Ti2qWDwuQ?si=7PQnKCFrSgf7gzjg">One of my favorite mangas, it's a must-read!</a>
             </ul>
         </div>
         <div class="section">
@@ -134,9 +139,9 @@
         </div>
         <div class="section">
             <h2>Fun Fact</h2>
-         <img src="Screenshot 2024-05-29 1.08.13 PM.png" >
+            <img src="Screenshot 2024-05-29 1.08.13 PM.png" alt="Fun Fact">
             <p>A fun fact about me is that I went to Brown University for the Summer of a Lifetime!</p>
-            <p>I have a pet cat named MOCHI !</p>
+            <p>I have a pet cat named MOCHI!</p>
             <div class="navbar">
                 <a href="../four.html">Click me to go back to Period 4!</a>
                 <a href="../six.html">OR you can check out Period 6!</a>
