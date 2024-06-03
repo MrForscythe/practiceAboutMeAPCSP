@@ -6,23 +6,47 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Me</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
-            background-color: black;
-            color: white;
-            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+            font-family: 'Roboto', sans-serif;
         }
 
         a {
-            color: blue;
+            color: #007BFF;
             text-decoration: none;
             margin: 0 10px;
+            transition: color 0.3s ease;
         }
 
-        section {
-            margin: 20px;
-            padding: 10px;
-            border: 1px solid blue;
+        a:hover {
+            color: #0056b3;
+        }
+
+        .return-button {
+            display: inline-block;
+            color: #FFF;
+            background-color: #007BFF;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .return-button:hover {
+            background-color: #0056b3;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
         }
     </style>
 </head>
@@ -30,61 +54,41 @@
 <body>
     <header>
         <nav>
-            <a href="#">General</a>
-            <a href="#">Cars</a>
-            <a href="#">Food</a>
-            <a href="#">Ukraine</a>
+            <a href="index.html" class="return-button">Return</a>
         </nav>
     </header>
 
     <main>
-        <section id="general">
-            <h2>General Information</h2>
-            <p>Your general information goes here.</p>
-        </section>
-
-        <section id="cars">
-            <h2>Cars</h2>
-            <p>Your favorite cars and driving experiences.</p>
-        </section>
-
-        <section id="food">
-            <h2>Food</h2>
-            <p>Your favorite dishes and culinary adventures.</p>
-        </section>
-
-
-
-    <div class="content">
-        <h1>Period 6 Class</h1>
-        <div class="student-grid">
-            <div class="student">Christopher Arciniega</div>
-            <div class="student"><a href="six/RobertoAboutMe.html">Roberto Arroyo</a></div>
-            <div class="student"><a href="six/MilanAboutMe.html">Milan Barcenas</a></div>
-            <div class="student">Fernando Barron</div>
-            <div class="student">Alondra Chamorro-Berrios</div>
-            <div class="student"><a href="six/AsiaCoAboutMe.html">Asia Comfort</a></div>
-            <div class="student"><a href="six/aboutJulian.html">Julian Cortez</a></div>
-            <div class="student">Fernando Cuevas-Jimenez</div>
-            <div class="student">Jeylen Gonzalez</div>
-            <div class="student"><a href="six/RyanAboutMe.html">Ryan Gonzalez</a></div>
-            <div class="student">Julio Gopar</div>
-            <div class="student"><a href="six/osvaldo.html">Osvaldo Hinojosa</a></div>
-            <div class="student"><a href="ab.sara.html">Sara Lobato</a></div>
-            <div class="student">Victor Lopez</div>
-            <div class="student">Igor Melnyk</div>
-            <div class="student">Anthony Mota</div>
-            <a class="student" href="elliott.html">Elliott Munoz</a>
-            <div class="student"><a href="six/isaiasrojasespinozaAboutMe.html">Isaias Rojas-Espinoza</a></div>
-            <div class="student"><a href="six/Alfredosauce.html">Alfredo Rodriguez</a></div>
-            <div class="student"><a href="six/Eduardo.HTML"> Eduardo Venegas</a></div>
-            <div class="student"><a href="six/Yun.html">Junzhu Yu</a></div>
+        <div class="content">
+            <h1>Period 6 Class</h1>
+            <div class="student-grid">
+                <div class="student">Christopher Arciniega</div>
+                <div class="student"><a href="six/RobertoAboutMe.html">Roberto Arroyo</a></div>
+                <div class="student"><a href="six/MilanAboutMe.html">Milan Barcenas</a></div>
+                <div class="student">Fernando Barron</div>
+                <div class="student">Alondra Chamorro-Berrios</div>
+                <div class="student"><a href="six/AsiaCoAboutMe.html">Asia Comfort</a></div>
+                <div class="student"><a href="six/aboutJulian.html">Julian Cortez</a></div>
+                <div class="student">Fernando Cuevas-Jimenez</div>
+                <div class="student">Jeylen Gonzalez</div>
+                <div class="student"><a href="six/RyanAboutMe.html">Ryan Gonzalez</a></div>
+                <div class="student">Julio Gopar</div>
+                <div class="student"><a href="six/osvaldo.html">Osvaldo Hinojosa</a></div>
+                <div class="student"><a href="ab.sara.html">Sara Lobato</a></div>
+                <div class="student">Victor Lopez</div>
+                <div class="student">Igor Melnyk</div>
+                <div class="student">Anthony Mota</div>
+                <a class="student" href="elliott.html">Elliott Munoz</a>
+                <div class="student"><a href="six/isaiasrojasespinozaAboutMe.html">Isaias Rojas-Espinoza</a></div>
+                <div class="student"><a href="six/Alfredosauce.html">Alfredo Rodriguez</a></div>
+                <div class="student"><a href="six/Eduardo.HTML"> Eduardo Venegas</a></div>
+                <div class="student"><a href="six/Yun.html">Junzhu Yu</a></div>
+            </div>
         </div>
-    </div>
-</html>
+    </main>
 
     <footer>
-        &copy; 2024 AP Computer Science Principles - Noble Street College Prep
+        © 2024 AP Computer Science Principles - Noble Street College Prep
     </footer>
 </body>
 </html>
