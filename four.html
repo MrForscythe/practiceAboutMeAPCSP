@@ -3,127 +3,112 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Period 4 Class - AP Computer Science Principles</title>
+    <title>About Me</title>
     <style>
         body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(270deg, #004d00, #00b300);
+            background-size: 400% 400%;
+            animation: gradientAnimation 15s ease infinite;
+            color: #fff;
+            text-align: center;
             margin: 0;
             padding: 0;
-            background: url('https://github.com/MrForscythe/practiceAboutMeAPCSP/blob/Meet-the-Foresythe/Chord%20Striker.jpeg?raw=true') no-repeat center center fixed;
-            background-size: cover;
-            color: #1d1d1f;
-            overflow-x: hidden;
         }
-
-
-        .navbar {
-            display: flex;
-            justify-content: center;
-            background-color: #1d1d1f;
-            padding: 1rem 0;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-            transition: background-color 0.3s;
+        @keyframes gradientAnimation {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
         }
-
-        .navbar a {
-            color: white;
-            text-transform: uppercase;
-            text-decoration: none;
-            padding: 0 1rem;
-            font-weight: 500;
-            transition: color 0.3s;
+        header {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 20px 0;
         }
-
-        .navbar a:hover {
-            color: #0071e3;
+        header h1 {
+            margin: 0;
+            font-size: 3em;
         }
-
         .content {
-            max-width: 900px;
-            margin: 2rem auto;
-            padding: 2rem;
-            background: url('https://github.com/MrForscythe/practiceAboutMeAPCSP/blob/Meet-the-Foresythe/Chord%20Striker.jpeg?raw=true') no-repeat center center fixed;
-            background-size: cover;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
+            margin: 20px auto;
+            width: 80%;
+            max-width: 600px;
+            background: rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            border-radius: 10px;
         }
-
-        .content h1 {
-            font-size: 2.5rem;
-            margin-bottom: 1rem;
-            text-align: center;
+        .content h2 {
+            margin-top: 0;
         }
-
-        .student-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-            gap: 1rem;
-            margin-top: 2rem;
+        .content p {
+            font-size: 1.2em;
+            line-height: 1.5em;
         }
-
-        .student {
-            background-color: #0071e3;
-            color: white;
-            padding: 1rem;
-            border-radius: 8px;
-            text-align: center;
-            font-size: 1.25rem;
+        img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            margin-top: 20px;
+            border: 5px solid #fff;
         }
-
         footer {
-            text-align: center;
-            padding: 1rem 0;
-            background-color: #1d1d1f;
-            color: white;
-            margin-top: 2rem;
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
         }
-
-        @media (max-width: 768px) {
-            .content {
-                margin: 1rem;
-                padding: 1.5rem;
-            }
+        footer p {
+            margin: 0;
+        }
+        button {
+            background-color: #00b300;
+            border: none;
+            color: #fff;
+            padding: 10px 20px;
+            font-size: 1em;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+        button:hover {
+            background-color: #004d00;
+        }
+        .hidden {
+            display: none;
         }
     </style>
 </head>
 <body>
-    <div class="navbar">
-        <a href="index.html">Home</a>
-        <a href="four.html">Period 4</a>
-        <a href="six.html">Period 6</a>
-    </div>
-
+    <header>
+        <h1>About Me</h1>
+    </header>
+    <img src="https://cdn.glitch.global/5a84b7f2-ce2b-4312-bfba-33c0aca0f962/KimKim?v=1716401640341" alt="Photo of Waiming Huang" id="profile-pic">
     <div class="content">
-        <h1>Period 4 Class</h1>
-        <div class="student-grid">
-            <div class="student"><a href="Kevin.html"> Kevin Arevalo </a></div>
-            <div class="student"><a href = "fourth/isaiah/isaiah.html">Isaiah Bucio</a></div>
-            <div class="student"><a href ="fourth/Henrey.html"> Henrey Bustos</a></div>
-            <div class="student"><a href="fourth/Roberto/Roberto.html"> Roberto Camacho </a> </div>
-            <div class="student"><a href="fourth/Ethans.html"> Ethan Cardona </a> </div>
-            <div class="student"><a href="fourth/REAL ChrisC.HTML">Christopher Chavez </a> </div>
-            <div class="student">Edward Cullquicondor</div>
-            <div class="student"><a href="Angie.html"> Angely Flores </a> </div>
-            <div class="student"><a href="fourth/GiselleF.html">Giselle Flores</a></div>
-            <div class="student"><a href="gisellem.html"> Giselle Meza </a> </div>
-            <div class="student"><a href="fourth/yahina/yahina.html">Yahina Hernandez</a></div>
-            <div class="student"><a href="fourth/waiming/ Waiming.html">Wai Ming Huang</a></div>
-            <div class="student"><a href="Benjamin.html"> Benjamin Jauregui</a></div>
-            <div class="student"><a href="Jose.html">Jose Lara</a></div>
-            <div class="student"><a href="fourth/Terrell.html">Terrell Lewis</a></div>
-            <div class="student">Giselle Meza</div>
-            <a class="student" href="fourth/diego/diego.html">Diego Reyes</a>
-            <div class="student"><a href="fourth/Ayla/Ayla.html"> Ayla Montero </a> </div>
-            <a class="student" href="fourth/Navarro.html"> Anthony Navarro</a>
-            <div class="student"><a href="https://elastic-supreme-argon.glitch.me/"> Mario Torres Chabolla</a></div>
-            <div class="student"><a href="Armando.html"> Armando Ruiz </a> </div>
-        </div>
+        <h2>Waiming Huang</h2>
+        <p>I am Waiming, and I enjoy mathematics and related subjects. I have a cat and live with my parents in a house next to our neighbors.</p>
+        <p>The picture above is me.</p>
+        <h3>Contact</h3>
+        <p id="contact-info" class="hidden">Please don't - Snap: tired376 - Insta: tired_1740 </p>
+        <button onclick="toggleContact()">Show Contact Info</button>
+        <br>
+        <button onclick="goHome()">Go to Home Page</button>
     </div>
-
     <footer>
-        &copy; 2024 AP Computer Science Principles - Noble Street College Prep Golden Tigers 
+        <p>Currently seeking financial support.</p>
     </footer>
+    <script>
+        function toggleContact() {
+            var contactInfo = document.getElementById('contact-info');
+            if (contactInfo.classList.contains('hidden')) {
+                contactInfo.classList.remove('hidden');
+            } else {
+                contactInfo.classList.add('hidden');
+            }
+        }
+        
+        function goHome() {
+            window.location.href = 'four.html'; // Navigates to 'four.html' as the home page
+        }
+    </script>
 </body>
 </html>
