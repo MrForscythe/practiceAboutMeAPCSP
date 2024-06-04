@@ -90,6 +90,8 @@
         <h3>Contact</h3>
         <p id="contact-info" class="hidden">Please don't - Snap: tired376 - Insta: tired_1740 </p>
         <button onclick="toggleContact()">Show Contact Info</button>
+        <br>
+        <button onclick="goHome()">Go to Home Page</button>
     </div>
     <footer>
         <p>Currently seeking financial support.</p>
@@ -102,6 +104,10 @@
             } else {
                 contactInfo.classList.add('hidden');
             }
+        }
+        
+        function goHome() {
+            window.location.href = 'index.html'; // Replace 'index.html' with the path to your home page
         }
     </script>
 </body>
