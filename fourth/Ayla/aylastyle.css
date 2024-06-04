@@ -60,7 +60,7 @@ header.navbar nav a {
 
 /* Footer Styles */
 .footer {
-    background-color: #00008B; /* Dark blue footer */
+    background-color: #fff; /* Dark blue footer */
     color: #fff;
     padding: 20px;
     text-align: center;
@@ -72,6 +72,5 @@ header.navbar nav a {
     text-decoration: none;
     margin: 0 10px;
 }
-
 
 
