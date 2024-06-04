@@ -37,6 +37,29 @@
     </style>
 </head>
 <body>
+    .navbar {
+            display: flex;
+            justify-content: center;
+            background-color: #1d1d1f;
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            transition: background-color 0.3s;
+        }
+
+        .navbar a {
+            color: white;
+            text-transform: uppercase;
+            text-decoration: none;
+            padding: 0 1rem;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .navbar a:hover {
+            color: #0071e3;
+        }
 
   <header>
         <h1>Welcome to My Website</h1>
