@@ -1,136 +1,145 @@
-/* Styling for the body */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #333;
-    color: #fff;
+    font-family: 'Playfair Display', serif;
     margin: 0;
     padding: 0;
+    background: url('https://wallpapercave.com/wp/wp4850127.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #e1e1e1;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    backdrop-filter: brightness(0.5);
 }
 
-/* Styling for the header and navigation */
 header {
-    background-color: #000;
-    padding: 20px;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: space-around;
-}
-
-nav ul li {
-    display: inline;
-}
-
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    padding: 10px 20px;
-    display: block;
-}
-
-/* Styling for the profile header */
-.profile-header {
-    display: flex;
-    align-items: center;
-    padding: 20px;
-    background-color: #444;
-}
-
-.profile-header img {
-    border-radius: 50%;
-    margin-right: 20px;
-}
-
-.user-info h1 {
-    margin: 0;
-    font-size: 24px;
-}
-
-/* Styling for the main content area */
-main {
-    width: 80%;
-    margin: 20px auto;
-    background-color: #222;
-    padding: 20px;
-    border-radius: 10px;
-}
-
-section {
-    margin-bottom: 20px;
-}
-
-section h2 {
-    background-color: #555;
-    padding: 10px;
-    margin: 0 -20px 20px;
-}
-
-/* Styling for the footer */
-footer {
-    background-color: #000;
-    padding: 20px;
+    background: rgba(0, 0, 0, 0.8);
+    color: #ff4c4c;
+    padding: 1em 0;
     text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+    border-bottom: 3px solid #8B0000;
 }
 
-footer ul {
-    list-style: none;
-    padding: 0;
-    margin: 0 0 10px;
-    display: flex;
-    justify-content: center;
-}
-
-footer ul li {
-    margin: 0 10px;
-}
-
-footer ul li a {
-    color: #fff;
-    text-decoration: none;
-}
-
-footer p {
+header h1 {
+    font-family: 'UnifrakturCook', serif;
     margin: 0;
+    font-size: 3em;
+    letter-spacing: 2px;
 }
 
-/* Styling for the image gallery */
-.image-gallery img {
-    width: 30%;
-    margin: 1%;
-    border: 3px solid #ff1493;
+header p {
+    margin: 0.5em 0 0;
+    font-size: 1.2em;
+    font-style: italic;
+    color: #cccccc;
+}
+
+main {
+    padding: 2em;
+    flex: 1;
+    position: relative;
+    background: rgba(0, 0, 0, 0.7);
+    border: 1px solid #333;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.8);
+}
+
+.section {
+    background: rgba(30, 0, 0, 0.9);
+    margin-bottom: 1.5em;
+    padding: 1.5em;
     border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.9);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+    border: 2px solid #8B0000;
 }
 
-/* Styling for the links section */
-.links {
-    margin: 20px 0;
+.section:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 1);
+    background: rgba(100, 0, 0, 0.9);
 }
 
-.links a {
+.section h2 {
+    margin-top: 0;
+    font-family: 'UnifrakturCook', serif;
+    font-size: 2em;
+    color: #ff4c4c;
+}
+
+img {
     display: block;
     margin: 10px 0;
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+    transition: transform 0.3s ease, filter 0.3s ease;
+    filter: grayscale(100%);
 }
 
-/* Styling for the navigation links */
-.navigation-links {
-    margin: 20px 0;
+img:hover {
+    transform: scale(1.05);
+    filter: grayscale(0%);
+}
+
+.navbar {
+    margin-top: 10px;
     text-align: center;
 }
 
-.navigation-links a {
-    margin: 0 10px;
-    color: #ff1493;
-    font-weight: bold;
+.navbar a {
+    display: inline-block;
+    margin: 10px 10px 0;
+    padding: 10px 20px;
+    background: linear-gradient(135deg, #8B0000, #ff4c4c);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease, transform 0.3s ease;
+    border: 2px solid #333;
+    font-family: 'UnifrakturCook', serif;
+}
+
+.navbar a:hover {
+    background: linear-gradient(135deg, #ff4c4c, #8B0000);
+    transform: scale(1.1);
+}
+
+a {
+    color: #ff4c4c;
+    text-decoration: none;
+    border-bottom: 2px solid #ff4c4c;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+}
+
+a:hover {
+    color: #ffffff;
+    border-bottom: 2px solid #ffffff;
+}
+
+.section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.section ul li {
+    margin: 0.5em 0;
+    padding-left: 1.5em;
+    position: relative;
+}
+
+.section ul li::before {
+    content: '⚔';
+    position: absolute;
+    left: 0;
+    color: #ff4c4c;
+    font-size: 1.2em;
 }
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Benjamin Jauregui's MySpace</title>
+    <link href="https://fonts.googleapis.com/css2?family=UnifrakturCook:display=swap&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -156,7 +165,7 @@ footer p {
         </div>
     </header>
     <main>
-        <section class="general-info">
+        <div class="section general-info">
             <h2>General Info</h2>
             <p>Member Since: 8/20/2007</p>
             <p>Website: <a href="#">myspace.com/bloxhead</a></p>
@@ -164,48 +173,40 @@ footer p {
             <p>Hobbies and Interests: I love to workout, I love to skateboard and I love listening to music</p>
             <p>Strengths and Skills: SWAG (outside of school though), good at saving money, I am very creative and I feel it helps me with problem solving</p>
             <p>Fun Fact: I went to Syracuse University for Summer of a Lifetime, 20% of coffee mugs have traces of poop on them, The FDA allows small amounts of rat traces in candy bars</p>
-        </section>
-        <section class="blog-entries">
+        </div>
+        <div class="section blog-entries">
             <h2>Latest Blog Entry</h2>
             <p>Bloggy: [Subscribe to this Blog]</p>
-        </section>
-        <section class="friend-space">
+        </div>
+        <div class="section friend-space">
             <h2>Benjamin Jauregui's Friend Space</h2>
             <p>Benjamin has 687 friends.</p>
-        </section>
-        <section class="comments">
+        </div>
+        <div class="section comments">
             <h2>Comments</h2>
             <p>Displaying 50 of 1108 comments</p>
-        </section>
-        <section id="images">
+        </div>
+        <div class="section" id="images">
             <h2>My Favorite Images</h2>
             <div class="image-gallery">
                 <img src="https://i.imgur.com/P6Nkj.jpg" alt="Placeholder Image 1">
                 <img src="https://pbs.twimg.com/media/GHNunpLWQAAQ4JP.jpg:large" alt="Placeholder Image 2">
                 <img src="https://github.com/MrForscythe/practiceAboutMeAPCSP/blob/Benjamin-Jauregui-patch-1/fourth/LUNCH.jpg?raw=true" alt="Placeholder Image 3">
             </div>
-        </section>
-        <section id="links">
+        </div>
+        <div class="section" id="links">
             <h2>Cool Links</h2>
             <div class="links">
                 <a href="https://www.youtube.com/watch?v=Xbmbgzy0n38&list=RDXbmbgzy0n38&start_radio=1">Website 1</a>
                 <a href="https://www.youtube.com/watch?v=03CERQGWJrs&list=LL&index=99">Website 2</a>
                 <a href="https://www.youtube.com/watch?v=4uXLo9Nnjtc&list=LL&index=137">Website 3</a>
             </div>
-        </section>
-        <div class="navigation-links">
+        </div>
+        <div class="navbar">
             <a href="four.html">Click me to go back to Period 4!</a>
             <a href="six.html">OR you can check out Period 6!</a>
         </div>
     </main>
     <footer>
         <ul>
-            <li><a href="#">About</a></li>
-            <li><a href="#">FAQ</a></li>
-            <li><a href="#">Terms</a></li>
-            <li><a href="#">Privacy</a></li>
-            <li><a href="#">Contact MySpace</a></li>
-        </ul>
-        <p>&copy; 2003-2024 MySpace.com. All Rights Reserved.</p>
-    </footer>
 
