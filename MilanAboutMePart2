@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A video game themed website">
+    <meta name="author" content="Your Name">
+    <title>Video Game Themed Website</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+        body {
+            font-family: 'Press Start 2P', cursive;
+            background-color: #000; /* Black background */
+            color: #fff; /* White text */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        header {
+            background-color: #1a1a1a; /* Dark background */
+            color: #00ff00; /* Bright green text */
+            text-align: center;
+            padding: 1em 0;
+            border-bottom: 5px solid #ff0000; /* Red border */
+            box-shadow: 0 4px 2px -2px gray;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #00ff00; /* Bright green */
+            font-weight: bold;
+            border-bottom: 2px solid transparent;
+        }
+        nav ul li a:hover {
+            border-bottom: 2px solid #ff0000; /* Red */
+        }
+        main {
+            padding: 20px;
+            flex: 1;
+        }
+        section {
+            background: #1a1a1a; /* Dark background */
+            margin: 20px 0;
+            padding: 20px;
+            border: 2px solid #ff0000; /* Red border */
+            border-radius: 15px;
+            box-shadow: 4px 4px 0 #00ff00; /* Bright green shadow */
+        }
+        footer {
+            background-color: #1a1a1a; /* Dark background */
+            color: #00ff00; /* Bright green text */
+            text-align: center;
+            padding: 10px 0;
+            border-top: 5px solid #ff0000; /* Red border */
+            box-shadow: 0 -4px 2px -2px gray;
+        }
+        h1, h2 {
+            text-shadow: 2px 2px #ff0000; /* Red shadow */
+        }
+        h1 {
+            color: #00ff00; /* Bright green */
+        }
+        h2 {
+            color: #ff0000; /* Red */
+        }
+        .image-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            border: 2px solid #00ff00; /* Bright green border */
+            border-radius: 10px;
+            box-shadow: 4px 4px 0 #ff0000; /* Red shadow */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Video Game Website</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#games">Games</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="home">
+            <h2>Home Section</h2>
+            <p>Welcome to the home section of my video game-themed website.</p>
+            <div class="image-container">
+                <img src="https://example.com/your-game-image.jpg" alt="Video Game Image">
+            </div>
+        </section>
+        
+        <section id="games">
+            <h2>Games Section</h2>
+            <p>Secret video game page! woohooo!!!</p>
+            <div class="image-container">
+                <img src="https://example.com/another-game-image.jpg" alt="Another Game Image">
+            </div>
+        </section>
+        
+        <section id="contact">
+            <h2>Contact Section</h2>
+            <p>That's about it.</p>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 Milan. All rights reserved.</p>
+    </footer>
+</body>
+</html>
