@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jose.HTML</title>
+    <!-- Add your CSS link or style tags here for styling -->
+    <style>
+        /* Add your CSS styles here */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #444;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+           margin: 5px;
+          
+        }
+        nav a: hover {
+            background-color: #555;
+        }
+        .container {
+            max-width: 960px;
+            margin: 20px auto;
+            padding: 0 20px;
+           margin: 5px;
+        }
+        footer {
+            background-color: #1000;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Jose's page</h1>
+    </header>
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="Fun Facts.html">Fun Facts</a>
+        <a href="Guess.html">Guess The Number</a>
+      <a href="BlackJack.html">BlackJack</a>
+    </nav>
+    <div class="container">
+    </div>
+    <footer>
+        <p style="color: black;">&copy; 2024 Ricky The Rat.co. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blackjack</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+    }
+</style>
+</head>
+<body>
+<h1>Blackjack</h1>
+<div id="game">
+    <button onclick="startGame()">Start Game</button>
+</div>
+<script>
+    let deck = [];
+    let playerCards = [];
+    let dealerCards = [];
+
+    function createDeck() {
+        let suits = ['Hearts', 'Diamonds', 'Clubs', 'Spades'];
+        let values = ['2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K', 'A'];
+        for (let suit of suits) {
+            for (let value of values) {
+                deck.push({value, suit});
+            }
+        }
+    }
+
+    function shuffleDeck() {
+        for (let i = deck.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [deck[i], deck[j]] = [deck[j], deck[i]];
+        }
+    }
+
+    function startGame() {
+        createDeck();
+        shuffleDeck();
+        playerCards = [drawCard(), drawCard()];
+        dealerCards = [drawCard(), drawCard()];
+        showGame();
+    }
+
+    function drawCard() {
+        return deck.pop();
+    }
+
+    function calculateHand(cards) {
+        let total = 0;
+        let hasAce = false;
+        for (let card of cards) {
+            if (card.value === 'A') {
+                hasAce = true;
+            }
+            total += getValue(card.value);
+        }
+        if (hasAce && total + 10 <= 21) {
+            total += 10;
+        }
+        return total;
+    }
+
+    function getValue(cardValue) {
+        if (cardValue === 'A') {
+            return 1;
+        } else if (['J', 'Q', 'K'].includes(cardValue)) {
+            return 10;
+        } else {
+            return parseInt(cardValue);
+        }
+    }
+
+    function showGame() {
+        let playerTotal = calculateHand(playerCards);
+        let dealerTotal = calculateHand(dealerCards);
+        let gameDiv = document.getElementById('game');
+        gameDiv.innerHTML = `<h2>Your Hand: ${playerCards.map(card => `${card.value} of ${card.suit}`).join(', ')}</h2>`;
+        gameDiv.innerHTML += `<h2>Your Total: ${playerTotal}</h2>`;
+        gameDiv.innerHTML += `<h2>Dealer's Hand: ${dealerCards[0].value} of ${dealerCards[0].suit}, ?</h2>`;
+        if (playerTotal > 21) {
+            gameDiv.innerHTML += '<h2>Bust! You lose.</h2>';
+        } else if (playerTotal === 21) {
+            gameDiv.innerHTML += '<h2>Blackjack! You win!</h2>';
+        } else {
+            gameDiv.innerHTML += '<button onclick="hit()">Hit</button>';
+            gameDiv.innerHTML += '<button onclick="stand()">Stand</button>';
+        }
+    }
+
+    function hit() {
+        playerCards.push(drawCard());
+        showGame();
+    }
+
+    function stand() {
+        while (calculateHand(dealerCards) < 17) {
+            dealerCards.push(drawCard());
+        }
+        showGame();
+        let playerTotal = calculateHand(playerCards);
+        let dealerTotal = calculateHand(dealerCards);
+        if (dealerTotal > 21 || playerTotal > dealerTotal) {
+            document.getElementById('game').innerHTML += '<h2>You win!</h2>';
+        } else if (playerTotal < dealerTotal) {
+            document.getElementById('game').innerHTML += '<h2>You lose.</h2>';
+        } else {
+            document.getElementById('game').innerHTML += '<h2>It\'s a tie!</h2>';
+        }
+    }
+</script>
+</body>
+</html>
