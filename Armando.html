@@ -45,6 +45,28 @@
       height: auto;
       border-radius: 10px;
     }
+    .image-gallery {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 1.5em;
+    }
+    .image-gallery img {
+      max-width: 45%;
+      height: auto;
+      border-radius: 10px;
+    }
+    .link-placeholder {
+      text-align: center;
+      margin-top: 2em;
+    }
+    .link-placeholder a {
+      font-size: 1.2em;
+      color: #007BFF;
+      text-decoration: none;
+    }
+    .link-placeholder a:hover {
+      text-decoration: underline;
+    }
   </style>
 </head>
 <body>
@@ -54,19 +76,35 @@
 
   <section>
     <h2>About Me</h2>
-    <p>Hi, my name is Armando Ruiz. I am currently a senior and I am the smartest kid alive.</p>
-    <p>Welcome to my webpage. This place will share information about why I am better than everyone else.</p>
+    <p>Hi, my name is Armando Ruiz. I am currently a senior and passionate about learning and exploring new things.</p>
+    <p>Welcome to my webpage. Here, I share some interesting facts about myself and my interests.</p>
     <div class="image-placeholder">
-      <img src="https://static.independent.co.uk/s3fs-public/thumbnails/image/2016/05/26/11/Captain-America-Marvel.jpg?width=1200" alt="A picture of Armando Ruiz">
+      <img src="https://static.independent.co.uk/s3fs-public/thumbnails/image/2016/05/26/11/Captain-America-Marvel.jpg?width=1200" alt="A representation of Armando Ruiz as a superhero">
     </div>
-    <h2>Topics About Me</h2>
+    <h2>Cool Facts About Me</h2>
     <ul>
-      <li>My Academic Achievements</li>
-      <li>My Hobbies and Interests</li>
-      <li>Projects I Have Worked On</li>
-      <li>My Future Goals</li>
-      <li>Why I Am Better Than Everyone Else</li>
+      <li>I attended a special program at Harvard for 2 weeks, where I excelled.</li>
+      <li>I have a keen interest in learning about obscure topics.</li>
+      <li>I enjoy playing video games and learning about cool fictional characters like superheroes.</li>
+      <li>My friends often comment on my charming personality and intelligence.</li>
     </ul>
+  </section>
+
+  <section>
+    <h2>Things I Have Made</h2>
+    <div class="image-gallery">
+      <div class="image-placeholder">
+        <img src="placeholder1.jpg" alt="Project 1">
+      </div>
+      <div class="image-placeholder">
+        <img src="placeholder2.jpg" alt="Project 2">
+      </div>
+    </div>
+  </section>
+
+  <section class="link-placeholder">
+    <p>Check out more of my work:</p>
+    <a href="four.html" target="_blank">Go back to the homepage and see mmore</a>
   </section>
 
   <footer>
