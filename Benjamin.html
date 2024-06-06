@@ -2,40 +2,43 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Benjamin Jauregui's MySpace</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Benjamin Jauregui - Personal Website</title>
+    <link href="https://fonts.googleapis.com/css2?family=Creepster&family=Orbitron:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <style>
         /* Styling for the body */
         body {
-            font-family: Arial, sans-serif;
-            background-color: #333;
-            color: #fff;
+            font-family: 'Roboto', sans-serif;
             margin: 0;
             padding: 0;
+            background: linear-gradient(135deg, #000000, #1a1a1a);
+            color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            background: url('https://images.unsplash.com/photo-1511367461989-f85a21fda167?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80') no-repeat center center fixed;
+            background-size: cover;
         }
 
         /* Styling for the header and navigation */
         header {
-            background-color: #000;
-            padding: 20px;
+            background: linear-gradient(135deg, #00008B, #1E90FF);
+            color: white;
+            padding: 1em 0;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+            position: relative;
+            z-index: 10;
         }
-
-        nav ul {
-            list-style: none;
-            padding: 0;
+        header h1 {
+            font-family: 'Creepster', cursive;
             margin: 0;
-            display: flex;
-            justify-content: space-around;
+            font-size: 3em;
         }
-
-        nav ul li {
-            display: inline;
-        }
-
-        nav ul li a {
-            color: #fff;
-            text-decoration: none;
-            padding: 10px 20px;
-            display: block;
+        header p {
+            margin: 0.5em 0 0;
+            font-size: 1.2em;
+            font-style: italic;
         }
 
         /* Styling for the profile header */
@@ -57,23 +60,48 @@
         }
 
         /* Styling for the main content area */
+
         main {
-            width: 80%;
-            margin: 20px auto;
-            background-color: #222;
-            padding: 20px;
-            border-radius: 10px;
+            padding: 2em;
+            flex: 1;
+            z-index: 5;
+            position: relative;
+            backdrop-filter: blur(5px);
+            background: rgba(0, 0, 0, 0.5);
         }
-
-        section {
-            margin-bottom: 20px;
+        .section {
+            background: rgba(0, 0, 51, 0.9);
+            margin-bottom: 1.5em;
+            padding: 1.5em;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.7);
+            transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+            border: 2px solid #00008B;
         }
-
-        section h2 {
-            background-color: #555;
-            padding: 10px;
-            margin: 0 -20px 20px;
+        .section:hover {
+            transform: translateY(-10px) rotate(-1deg);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.9);
+            background: rgba(0, 0, 153, 0.9);
         }
+        .section h2 {
+            margin-top: 0;
+            font-family: 'Orbitron', sans-serif;
+            font-size: 1.8em;
+            color: #1E90FF;
+        }
+        img {
+            display: block;
+            margin: 10px 0;
+            max-width: 100%;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s ease;
+        }
+        img:hover {
+            transform: scale(1.1) rotate(1deg);
+        }
+        .navbar {
+            margin-top: 10px;
 
         /* Styling for the footer */
         footer {
@@ -81,23 +109,22 @@
             padding: 20px;
             text-align: center;
         }
-
-        footer ul {
-            list-style: none;
-            padding: 0;
-            margin: 0 0 10px;
-            display: flex;
-            justify-content: center;
-        }
-
-        footer ul li {
-            margin: 0 10px;
-        }
-
-        footer ul li a {
-            color: #fff;
+        .navbar a {
+            display: inline-block;
+            margin: 10px 10px 0;
+            padding: 10px 20px;
+            background: linear-gradient(135deg, #00008B, #1E90FF);
+            color: white;
             text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s ease, transform 0.3s ease;
+            border: 2px solid #333;
         }
+
+        .navbar a:hover {
+            background: linear-gradient(135deg, #1E90FF, #00008B);
+            transform: scale(1.1) rotate(-2deg);
+
 
         footer p {
             margin: 0;
@@ -131,30 +158,51 @@
             margin: 0 10px;
             color: #ff1493;
             font-weight: bold;
+
         }
     </style>
 </head>
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Browse</a></li>
-                <li><a href="#">Search</a></li>
-                <li><a href="#">Invite</a></li>
-                <li><a href="#">Mail</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Favorites</a></li>
-            </ul>
-        </nav>
-        <div class="profile-header">
-            <img src="https://via.placeholder.com/150" alt="Profile Picture">
-            <div class="user-info">
-                <h1>Benjamin Jauregui</h1>
-                <p>Profile Views: 17753</p>
-                <p>Last Login: 5/28/2024</p>
-            </div>
+        <h1>Benjamin Jauregui</h1>
+        <p>SWAG ZONE</p>
+    </header>
+    <main>
+        <div class="section">
+            <h2>About Me</h2>
+            <p>About me: My name is Benjamin Jauregui and I am 16 and a junior, I rep Chicago midway area</p>
         </div>
+        <div class="section">
+            <h2>Hobbies & Interests</h2>
+            <ul>
+                <p>Hobbies and Interests: I love to workout, I love to skateboard and I love listening to music</p>
+                <img src="https://i.imgur.com/P6Nkj.jpg" alt="Placeholder Image 1">
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Strengths and Skills</h2>
+            <p>Strengths and Skills: SWAG (outside of school though), good at saving money, I am very creative and I feel it helps me with problem solving</p>
+        </div>
+        <div class="section">
+            <h2>Future Goals</h2>
+            <p>Future goals: My goal is to work a job within engineering or start a business of my own</p>
+            <ul>
+                <img src="https://pbs.twimg.com/media/GHNunpLWQAAQ4JP.jpg:large" alt="Placeholder Image 2">      
+            </ul>
+        </div>
+        <div class="section">
+            <h2>Fun Fact</h2>
+            <img src="https://raw.githubusercontent.com/MrForscythe/practiceAboutMeAPCSP/Benjamin-Jauregui/LUNCH.jpg" alt="Placeholder Image 3">
+            <p> I went to Syracuse University for Summer of a Lifetime, 20% of coffee mugs have traces of poop on them, The FDA allows small amounts of rat traces in candy bars</p>
+            <div class="navbar">
+                <a href="../four.html">Click me to go back to Period 4!</a>
+                <a href="../six.html">OR you can check out Period 6!</a>
+                <a href="https://www.youtube.com/watch?v=Xbmbgzy0n38&list=RDXbmbgzy0n38&start_radio=1">Website 1</a>
+                <a href="https://www.youtube.com/watch?v=03CERQGWJrs&list=LL&index=99">Website 2</a>
+                <a href="https://www.youtube.com/watch?v=4uXLo9Nnjtc&list=LL&index=137">Website 3</a>
+                <a href="https://drive.google.com/file/d/1rmLAq5-v2bnuXrtHsBABKXqhyhoONGyp/view?usp=sharing" target="_blank">FREAK</a>
+
     </header>
     <main>
         <section class="general-info">
@@ -193,22 +241,8 @@
                 <a href="https://www.youtube.com/watch?v=03CERQGWJrs&list=LL&index=99">Website 2</a>
                 <a href="https://www.youtube.com/watch?v=4uXLo9Nnjtc&list=LL&index=137">Website 3</a>
             </div>
-        </section>
-        <div class="navigation-links">
-            <a href="four.html">Click me to go back to Period 4!</a>
-            <a href="six.html">OR you can check out Period 6!</a>
         </div>
     </main>
-    <footer>
-        <ul>
-            <li><a href="#">About</a></li>
-            <li><a href="#">FAQ</a></li>
-            <li><a href="#">Terms</a></li>
-            <li><a href="#">Privacy</a></li>
-            <li><a href="#">Contact MySpace</a></li>
-        </ul>
-        <p>&copy; 2003-2024 MySpace.com. All Rights Reserved.</p>
-    </footer>
 </body>
 </html>
 
