@@ -3,104 +3,132 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Isaiah Bucio: The Adventure Kid</title>
+  <title>I'm Batman</title>
   <style>
     body {
-      font-family: 'Comic Sans MS', cursive, sans-serif;
+      font-family: 'Arial', sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #000033; /* Dark Blue */
-      background-image: url('star.png'); /* Star background image */
+      background-color: #1a1a1a; /* Dark background */
+      color: #fff; /* White text color */
     }
+
     header {
-      background-color: #333;
-      color: #fff;
       text-align: center;
+      background-color: #007bff; /* Blue header background */
+      color: #fff; /* White text color */
       padding: 20px 0;
+      margin-bottom: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     }
-    h1 {
-      margin: 0;
-      font-size: 36px;
-    }
+
     .container {
       max-width: 800px;
-      margin: 20px auto;
+      margin: 0 auto;
       padding: 20px;
-      background-color: #fff;
+      background-color: #333; /* Dark container background */
       border-radius: 10px;
-      box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.1);
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.7); /* Stronger shadow effect */
     }
+
+    h1, h2 {
+      color: #ffcc00; /* Brighter yellow heading color */
+    }
+
     p {
       line-height: 1.6;
-      color: #333;
     }
-    .profile-image {
-      width: 200px;
-      border-radius: 50%;
-      display: block;
-      margin: 20px auto;
-      box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.3);
-    }
-    .active {
-      color: green;
-    }
-    .section-title {
-      font-size: 24px;
-      color: #333;
-      margin-top: 30px;
-      border-bottom: 2px solid #333;
-      padding-bottom: 5px;
-    }
+
     .fun-facts {
       display: flex;
       justify-content: space-around;
       margin-top: 30px;
+      gap: 20px;
+      flex-wrap: wrap;
     }
+
     .fun-facts-item {
+      flex: 1;
       text-align: center;
       padding: 20px;
       border-radius: 10px;
-      background-color: #f5f5f5;
-      box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+      background-color: #444; /* Dark gray background for fun facts */
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Slight shadow effect */
+      margin: 10px;
     }
+
     .fun-facts-item h3 {
       margin-top: 0;
+      color: #ffcc00; /* Brighter yellow heading color */
+    }
+
+    .fun-facts-item img {
+      width: 100px; /* Adjust the size of the image */
+      border-radius: 50%; /* Make the image round */
+      margin-bottom: 10px; /* Add some space below the image */
+    }
+
+    .profile-image {
+      display: block;
+      margin: 0 auto 20px;
+      border-radius: 50%;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.7); /* Stronger shadow effect */
+      width: 150px; /* Set profile image size */
+      height: 150px; /* Set profile image size */
+      object-fit: cover; /* Ensure image covers the box */
+    }
+
+    .back-to-home {
+      display: block;
+      text-align: center;
+      margin-top: 30px;
+      padding: 10px 20px;
+      background-color: #007bff; /* Blue button background */
+      color: #fff; /* White text color */
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+
+    .back-to-home:hover {
+      background-color: #0056b3; /* Darker blue on hover */
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>Isaiah Bucio: The Adventure Kid</h1>
+    <h1>What's up Brother!!!</h1>
   </header>
   <div class="container">
-    <img class="profile-image" src="kid.jpg" alt="Isaiah Bucio">
-    <h2>About Me</h2>
-    <p>
-      Hey there! I'm Isaiah Bucio, a 17-year-old adventurer with a passion for exploring the world! By day, I'm just your regular high school student, but when night falls, I become the one and only Batman, fighting crime and keeping the city safe.
-    </p>
-    <h3>My Adventures</h3>
-    <p>
-      I'm always on the move, seeking out new experiences and adrenaline-pumping activities. Whether it's hiking through dense forests, surfing gnarly waves, or scaling towering cliffs, I'm up for any challenge!
-    </p>
-    <h3>Food Adventures</h3>
-    <p>
-      Despite my adventurous spirit, I'm a bit of a picky eater. But that doesn't stop me from trying new foods! From street tacos in Mexico to sushi in Japan, I'm always on the lookout for delicious treats to satisfy my taste buds.
-    </p>
-    <h3>Fun Facts About Me</h3>
+    <img src="https://i.scdn.co/image/ab67616d00001e02e934fcef40e86f16f6dc40b2" alt="Profile Image" class="profile-image">
+    <p>Hello there! My name is Isaiah Bucio.</p>
+    <p>During the day, I'm just like any other 17 year-old student, attending classes, hanging out with friends, and doing homework. But when the night falls, I transform into someone else...</p>
+    <h2>Adventures Across the Globe</h2>
+    <p>Exploration is my passion. I've been fortunate enough to visit 20 different countries so far! From the bustling streets of Jamaica to the serene landscapes of Madeira, Portugal, each journey has been a thrilling adventure.</p>
+    <h2>Becoming Batman</h2>
+    <p>As the sun sets and darkness envelops the city, I answer the call to become Batman. With my cape and cowl, I patrol the streets, fighting crime and protecting the innocent. It's a responsibility I take very seriously.</p>
+    <h2>The Picky Eater</h2>
+    <p>Despite all my adventures, there's one thing that hasn't changed—I'm a very picky eater. While others may indulge in exotic cuisines, I prefer the simplicity of a good old cheese pizza. It's the only thing that never disappoints.</p>
+    <h2>Fun Facts About Me</h2>
     <div class="fun-facts">
       <div class="fun-facts-item">
-        <h3>Active Lifestyle</h3>
-        <p>Whether it's hiking, biking, or swimming, I'm always on the move!</p>
+        <img src="https://i.natgeofe.com/n/0c683d95-5f28-436b-a415-d7929122d230/coast-madeira-portugal.jpg" alt="Explorer">
+        <h3>Explorer Extraordinaire</h3>
+        <p>I've been to the Grand Canyon and one of my hardest hikes was around 10,000 feet in altitude. Furthermore, I know how to snowboard and surf, so I would just like to say that I am a very athletic person; some call me an athletic freak.</p>
       </div>
       <div class="fun-facts-item">
-        <h3>Superhero by Night</h3>
-        <p>When darkness falls, I don the cape and cowl to fight crime as Batman!</p>
+        <img src="https://assets.mycast.io/posters/batman-cold-winter-fan-casting-poster-152834-large.jpg?1639387466" alt="Batman">
+        <h3>I'm Batman</h3>
+        <p>During the day, I'm just an average high school student, but when the sun falls and the moon rises, I take to the streets looking down upon protecting my city from crime as Batman. (BTW, this is totally a picture of me :):))</p>
       </div>
       <div class="fun-facts-item">
-        <h3>Picky Eater</h3>
-        <p>I may be adventurous, but I have a selective palate when it comes to food!</p>
+        <img src="https://media.istockphoto.com/id/1277406258/vector/funny-tasty-slice-of-pizza-colorful-vector-illustration.jpg?s=612x612&w=0&k=20&c=sS5JZKWeMEvDUPz9U4tndI1MCcGtM-0ev6oYKuBwqCo=" alt="Pizza Connoisseur">
+        <h3>Pizza Connoisseur</h3>
+        <p>I've tried pizza from every corner of the globe, but nothing beats a classic cheese pizza. But, my favorite pizza spot has to be Dimo's right here in Wicker Park.</p>
+        <a href="https://www.youtube.com/watch?v=hPr-Yc92qaY" target="_blank">Click here to know more about me :)</a>
       </div>
     </div>
+    <a href= "https://mrforscythe.github.io/practiceAboutMeAPCSP/#period4">Click this to go back to the home page </a>
   </div>
 </body>
-</html>   
+</html>
