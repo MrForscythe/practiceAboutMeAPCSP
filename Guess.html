@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jose.HTML</title>
+    <!-- Add your CSS link or style tags here for styling -->
+    <style>
+        /* Add your CSS styles here */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #444;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+           margin: 5px;
+          
+        }
+        nav a: hover {
+            background-color: #555;
+        }
+        .container {
+            max-width: 960px;
+            margin: 20px auto;
+            padding: 0 20px;
+           margin: 5px;
+        }
+        footer {
+            background-color: #1000;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Jose's page</h1>
+    </header>
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="Fun Facts.html">Fun Facts</a>
+        <a href="Guess.html">Guess The Number</a>
+      <a href="BlackJack.html">BlackJack</a>
+    </nav>
+    <div class="container">
+    </div>
+    <footer>
+        <p style="color: black;">&copy; 2024 Ricky The Rat.co. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Guess the Number</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+    }
+</style>
+</head>
+<body>
+
+<h1>Guess the Number</h1>
+<p>I'm thinking of a number between 1 and 100. Can you guess what it is?</p>
+<input type="number" id="guessInput">
+<button onclick="checkGuess()">Guess</button>
+<p id="message"></p>
+
+<script>
+    // Generate a random number between 1 and 100
+    const secretNumber = Math.floor(Math.random() * 100) + 1;
+    let attempts = 0;
+
+    // Function to check the user's guess
+    function checkGuess() {
+        const guessInput = document.getElementById('guessInput');
+        const guess = parseInt(guessInput.value);
+        
+        if (isNaN(guess) || guess < 1 || guess > 100) {
+            setMessage('Please enter a valid number between 1 and 100.', 'red');
+            return;
+        }
+
+        attempts++;
+
+        if (guess === secretNumber) {
+            setMessage(`Congratulations! You've guessed the number ${secretNumber} in ${attempts} attempts!`, 'green');
+            disableInput();
+        } else if (guess < secretNumber) {
+            setMessage('Too low. Try again!', 'blue');
+        } else {
+            setMessage('Too high. Try again!', 'blue');
+        }
+
+        guessInput.value = ''; // Clear the input field after each guess
+    }
+
+    // Function to display messages to the user
+    function setMessage(message, color) {
+        const messageElement = document.getElementById('message');
+        messageElement.textContent = message;
+        messageElement.style.color = color;
+    }
+
+    // Function to disable the input field and guess button after the correct guess
+    function disableInput() {
+        document.getElementById('guessInput').disabled = true;
+        document.querySelector('button').disabled = true;
+    }
+</script>
+
+</body>
+</html>
